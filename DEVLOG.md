@@ -16,5 +16,7 @@
     - PowerShell blocked venv activation (execution policy). Fixed with `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned`.
     - First `pip install -e .` produced version 0.0.0 with no `reticle` command because `pyproject.toml` was unsaved/empty. Saved the files and reinstalled.
 - Broken / unfinished:
-- Next session starts with:
-- Commit(s):
+    - `README.md` is a placeholder, and `docs/` and `tests/` are empty.
+    - No database and vehicle records yet.
+- Next session starts with: designing `schema.sql` (manufacturer -> model -> generation -> trim), then the DB connection and migrations in `core/db.py`
+- Commit(s): "Initial project scaffold"
