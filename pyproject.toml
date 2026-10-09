@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reticle"
+version = "0.0.1"
+description = "Terminal-based vehicle intelligence, spotting and driving-history system"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["rich", "prompt_toolkit"]
+
+[project.scripts]
+reticle = "reticle.cli.repl:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+reticle = ["data/*.sql", "data/*.csv"]
