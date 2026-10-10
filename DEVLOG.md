@@ -20,3 +20,9 @@
     - No database and vehicle records yet.
 - Next session starts with: designing `schema.sql` (manufacturer -> model -> generation -> trim), then the DB connection and migrations in `core/db.py`
 - Commit(s): "Initial project scaffold"
+
+## October 10 / 2026 -- Session 02
+**Start**
+- Goal: Design the SQLite schma (manufacturer -> model -> generation -> trim, plus aliases and schema_version) and write core/db.py to open the database and apply the schema.
+- Starting state: scaffold pushed to Github; `reticle` prints RETICLE ONLINE; schema.sql and db.py are empty
+- Open decisions: how to model Revlo tiers; how to model drives from Wheelz (manual entry only).
